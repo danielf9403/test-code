@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import { ContactUs } from './pages/ContactForm';
 
 function App() {
