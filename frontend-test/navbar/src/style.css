@@ -1,0 +1,345 @@
+
+/* app style*/
+body{
+  background-color: rgb(0, 0, 54);
+  color:blue;
+}
+ 
+/* style navBar */
+ .navBar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 94%;
+    z-index: 100;
+    background: fixed;
+    background-color:rgb(0, 0, 54);
+    
+
+}
+  
+
+.links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%; 
+}
+  
+.links a {
+    text-decoration: none;
+    font-size: larger;
+    font-style: bold, italic;
+    color: blue;
+    font-family: 'Secular One', sans-serif;
+}
+  
+@media only screen and (max-width: 768px) {
+  .links1 {
+    flex-direction: row;
+  }
+} 
+
+
+
+/* style sidebar */
+
+.icon {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:6% ;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(0, 0, 54);
+}
+  
+.icon a {
+  color:blue;
+  font-size: 3rem;
+  display: d-flex justity-content-evenly;
+}
+
+/* style resume page */
+.resume{
+  width:auto;
+  height: fit-content;
+  margin-top: 8rem;
+  margin-left: 8rem;
+  
+}
+.resume ul{
+  list-style-type: none;
+}
+
+.resume-mane{
+  text-align: center;
+  font-size: 2em;
+}
+
+.resume-summary p{
+  width: 750%;
+  text-align: right; 
+}
+
+/* style home page */
+.headName{
+    text-align: center;
+}
+.home{
+    margin-top: 10rem;
+    display: inline-flex;
+    margin-left: 11rem;
+    align-content: center;
+    position: absolute;
+}
+
+.home-name {
+  width: auto;
+  height: fit-content;
+  text-align: right;
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+.home-pic {
+    width: 400px;
+    height: 400px;
+    margin-top: 3rem;
+    border: 3px solid rgb(4, 4, 6);
+    background-image: url(./assets/penup_20230427_195747.jpg);
+    background-size: cover;
+    
+}
+
+/* style projects page */
+.p-container{
+  
+  position: relative;
+  width: 320px;
+  margin: 15rem auto 0 auto;
+  perspective: 1000px;
+  
+}
+
+
+.p-carousel{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 15s infinite forwards linear;
+}
+
+.p-carousel:hover{
+  animation-play-state: paused;
+}
+
+.p-box{
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  box-shadow: inset 0 0 0 2000px rbga(0, 0, 0, 0.5);
+  display: block;
+  border: 2px solid black;
+  text-decoration: none;
+  
+}
+
+.p-box a {
+  text-decoration: none;
+}
+span{
+  margin: auto;
+  font-size: 2rem;
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.p-box:nth-child(1){
+  background-color: blueviolet;
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.p-box:nth-child(2){
+  background-color: rgb(170, 196, 0);
+  transform: rotateY(60deg) translateZ(430px);
+}
+
+.p-box:nth-child(3){
+  background-color: rgb(57, 0, 110);
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.p-box:nth-child(4){
+  background-color: rgb(137, 4, 4);
+  transform: rotateY(180deg) translateZ(430px);
+}
+
+.p-box:nth-child(5){
+  background-color: rgb(236, 125, 29);
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.p-box:nth-child(6){
+  background-color: rgb(17, 171, 73);
+  transform: rotateY(300deg) translateZ(430px);
+}
+
+.p-box button{
+  margin: auto;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+/* style contact page */
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+textarea{
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30rem;
+  height: 10rem;
+}
+
+input[type="submit"]{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label{
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+/* about page style */
+.about {
+  margin-top: 8rem;
+    display: inline-flex;
+    margin-left: 11rem;
+    align-content: center;
+    position: absolute;
+}
+
+
+.about-name-paragraf{
+  width: auto;
+  height: fit-content;
+  text-align: right;
+  margin-top: 4rem;
+  
+}
+
+.about-name{
+  width: auto;
+  height: fit-content;
+  text-align: right;
+  width: fit-content;
+  margin-left: 6rem;
+  
+}
+
+.about-paragraf {
+  color: aqua;
+  margin-top: 4rem;
+  margin-left: 6rem;
+  width: 700px;
+  height: fit-content;
+  text-align: left;
+  
+}
+
+.about-pic {
+  margin-top: 3rem;
+  
+}
+
+.carousel-pics{
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.flag {
+  height: 8%;
+  width: 100%;
+  
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.flag-color {
+  flex-grow: 1;
+}
+
+.red {
+  background-color: red;
+  width: auto;
+  height: 100%;
+}
+
+.yellow {
+  background-color: yellow;
+  width: auto;
+  height: 100%;
+}
+
+.blue {
+  background-color: blue;
+  width: auto;
+  height: 100%;
+}
+
+
+.div1{
+  background-image: url("./assets/beach1.jpg");
+  background-repeat: no-repeat;
+  
+}
+.div2{
+  background-image: url("./assets/beach.jpg");
+}
+.div3{
+  background-image: url(./assets/IMG_1558.jpg);
+}
+
+.about-pic-carousel{
+  display: flex;
+  justify-content: center;
+}

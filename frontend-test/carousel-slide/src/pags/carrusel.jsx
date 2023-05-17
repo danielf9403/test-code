@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Carousel() {
+function AboutCarousel() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   function incrementSlide() {
@@ -48,7 +48,7 @@ function Carousel() {
           <h1>div2</h1>
         </div>
 
-        <div className="carousel-pics div3" style={{ display: activeSlide === 1 ? "block" : "none" }}>
+        <div className="carousel-pics div3" style={{ display: activeSlide === 2 ? "block" : "none" }}>
           <div className="flag">
             <div className="flag-color red"></div>
             <div className="flag-color yellow"></div>
@@ -62,7 +62,9 @@ function Carousel() {
       <input checked={activeSlide === 1} onChange={handleRadioInputChange} type="radio" name="position" value="1" />
       <input checked={activeSlide === 2} onChange={handleRadioInputChange} type="radio" name="position" value="2" />
     </div>
+
+    
   );
 }
 
-export default Carousel;
+export default AboutCarousel;

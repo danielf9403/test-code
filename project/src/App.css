@@ -1,0 +1,99 @@
+body {
+  color:blue;
+}
+
+.p-container{
+  
+  position: relative;
+  width: 320px;
+  margin: 15rem auto 0 auto;
+  perspective: 1000px;
+  color: azure;
+}
+
+
+.p-carousel{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 15s infinite forwards linear;
+}
+
+.p-carousel:hover{
+  animation-play-state: paused;
+}
+
+.p-box{
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  box-shadow: inset 0 0 0 2000px rbga(0, 0, 0, 0.5);
+  display: block;
+  border: 2px solid black;
+  text-decoration: none;
+
+}
+
+.p-box a {
+  text-decoration: none;
+}
+
+span{
+  margin: auto;
+  font-size: 2rem;
+  color: azure;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.p-box:nth-child(1){
+  background-color: blueviolet;
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.p-box:nth-child(2){
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(57, 0, 110);
+  transform: rotateY(60deg) translateZ(430px);
+}
+
+.p-box:nth-child(3){
+  background-color: rgb(57, 0, 110);
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.p-box:nth-child(4){
+  background-color: rgb(137, 4, 4);
+  transform: rotateY(180deg) translateZ(430px);
+}
+
+.p-box:nth-child(5){
+  background-color: rgb(236, 125, 29);
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.p-box:nth-child(6){
+  background-color: rgb(17, 171, 73);
+  transform: rotateY(300deg) translateZ(430px);
+}
+
+.p-box button{
+  margin: auto;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
