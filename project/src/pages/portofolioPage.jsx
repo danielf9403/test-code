@@ -1,12 +1,14 @@
 import React from "react";
-import Potofolio from '../components/portofolio'
 
-const portofolioPage = () => {
+const PortofolioPage = () => {
   return(
     <div  className="portofolio-body">
-      <Potofolio/>
+      <h1>Portofolio</h1>
+      <button>
+        <span>SEE CODE</span>
+      </button>
     </div>
   )
 };
 
-export default portofolioPage
+export default PortofolioPage

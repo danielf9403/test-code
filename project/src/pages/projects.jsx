@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PortofolioPage from "./portofolioPage";
 
 
 
@@ -22,14 +24,12 @@ const ProjectCarousel = () => {
         </div>
         
         <div className={`p-box `}>
-          
-            <button onClick={() => handleButtonClick('Portofolio')}>
-            <a href="./portofolioPage.jsx">
-              <span>Portofolio</span>
-            </a >  
-            </button>
+        <Link to="/portofolioPage">
 
-          
+                <button onClick={() => handleButtonClick('Portofolio')}>
+                    <span>Portofolio</span>
+                </button>
+            </Link > 
         </div>
         
         <div className="p-box">
@@ -58,3 +58,6 @@ const ProjectCarousel = () => {
 }
 
 export default ProjectCarousel;
+
+
+// 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
